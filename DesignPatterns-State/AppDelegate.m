@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TCPConnection.h"
+#import "TCPEstablished.h"
+#import "TCPClosed.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +19,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    TCPConnection* tcpCon = [[TCPConnection alloc] init];
+    
+    [tcpCon changeState:[[TCPEstablished alloc] init]];
+    [tcpCon activeOpen];
+    [tcpCon changeState:[[TCPClosed alloc] init]];
+    [tcpCon activeOpen];
 }
-
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application

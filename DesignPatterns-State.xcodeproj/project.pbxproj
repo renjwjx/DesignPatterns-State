@@ -12,6 +12,10 @@
 		EE3C4448209F3BF7007B56DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3C4447209F3BF7007B56DC /* Assets.xcassets */; };
 		EE3C444B209F3BF7007B56DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3C4449209F3BF7007B56DC /* Main.storyboard */; };
 		EE3C444E209F3BF7007B56DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C444D209F3BF7007B56DC /* main.m */; };
+		EE3C4457209F3C08007B56DC /* TCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C4456209F3C08007B56DC /* TCPConnection.m */; };
+		EE3C445A209F3C13007B56DC /* TCPState.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C4459209F3C13007B56DC /* TCPState.m */; };
+		EE3C445D209F3CFA007B56DC /* TCPEstablished.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C445C209F3CFA007B56DC /* TCPEstablished.m */; };
+		EE3C4460209F409C007B56DC /* TCPClosed.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C445F209F409C007B56DC /* TCPClosed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,14 @@
 		EE3C444C209F3BF7007B56DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE3C444D209F3BF7007B56DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE3C444F209F3BF7007B56DC /* DesignPatterns_State.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DesignPatterns_State.entitlements; sourceTree = "<group>"; };
+		EE3C4455209F3C08007B56DC /* TCPConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPConnection.h; sourceTree = "<group>"; };
+		EE3C4456209F3C08007B56DC /* TCPConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPConnection.m; sourceTree = "<group>"; };
+		EE3C4458209F3C13007B56DC /* TCPState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPState.h; sourceTree = "<group>"; };
+		EE3C4459209F3C13007B56DC /* TCPState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPState.m; sourceTree = "<group>"; };
+		EE3C445B209F3CFA007B56DC /* TCPEstablished.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPEstablished.h; sourceTree = "<group>"; };
+		EE3C445C209F3CFA007B56DC /* TCPEstablished.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPEstablished.m; sourceTree = "<group>"; };
+		EE3C445E209F409C007B56DC /* TCPClosed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPClosed.h; sourceTree = "<group>"; };
+		EE3C445F209F409C007B56DC /* TCPClosed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPClosed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,14 @@
 			children = (
 				EE3C4441209F3BF7007B56DC /* AppDelegate.h */,
 				EE3C4442209F3BF7007B56DC /* AppDelegate.m */,
+				EE3C4455209F3C08007B56DC /* TCPConnection.h */,
+				EE3C4456209F3C08007B56DC /* TCPConnection.m */,
+				EE3C4458209F3C13007B56DC /* TCPState.h */,
+				EE3C4459209F3C13007B56DC /* TCPState.m */,
+				EE3C445B209F3CFA007B56DC /* TCPEstablished.h */,
+				EE3C445C209F3CFA007B56DC /* TCPEstablished.m */,
+				EE3C445E209F409C007B56DC /* TCPClosed.h */,
+				EE3C445F209F409C007B56DC /* TCPClosed.m */,
 				EE3C4444209F3BF7007B56DC /* ViewController.h */,
 				EE3C4445209F3BF7007B56DC /* ViewController.m */,
 				EE3C4447209F3BF7007B56DC /* Assets.xcassets */,
@@ -140,7 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3C4460209F409C007B56DC /* TCPClosed.m in Sources */,
+				EE3C445D209F3CFA007B56DC /* TCPEstablished.m in Sources */,
+				EE3C445A209F3C13007B56DC /* TCPState.m in Sources */,
 				EE3C4446209F3BF7007B56DC /* ViewController.m in Sources */,
+				EE3C4457209F3C08007B56DC /* TCPConnection.m in Sources */,
 				EE3C444E209F3BF7007B56DC /* main.m in Sources */,
 				EE3C4443209F3BF7007B56DC /* AppDelegate.m in Sources */,
 			);
